@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN - SOEN387</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+
+    <ol class="breadcrumb">
+      <li><a class="active" href="index.html">Home</a></li>
+    </ol>
+
+    <div class="well">
+      <form class="form-horizontal" role="form" action="login.do" method="post">
+        <fieldset>
+          <legend>Login</legend>
+          <div class="form-group">
+            <label for="input-username" class="col-lg-2 control-label">Username</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" name="username" id="input-username" placeholder="Username" autocomplete="false">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-password" class="col-lg-2 control-label">Password</label>
+            <div class="col-lg-10">
+              <input type="password" class="form-control" name="password" id="input-password" placeholder="Password" autocomplete="false">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      </div>
+    <h3>Login Information</h3>
+    <p>Valid username and password combos are: <code>charles/charles</code> <code>admin/admin</code></p>
+    <h3>Description</h3>
+    <p>
+      This is a simple SOEN387 Java Servlet and JSP demonstration. Since this course overall is about enterprise web application, I thought it would be interesting to consume another web service rather than build a local XML flat files for storage of book information. However, note that the user database is still located <a href="resources/users.yml">in a flat file</a>. Note that I have chosen to use <a href="http://yaml.org/">YAML</a> rather than XML to store the user information. As I prefer the simplicity of YAML, and don't like the overly verbose XML.
+    </p>
+    <p>Below graphically depict how the information are send throughout my web application. Note that I have not drew the cookies storage.</p>
+    <p><img src="assets/img/workflow.png" alt="Web application workflow" /></p>
+    <h3>Library</h3>
+    <p>I have used the following libraries:</p>
+    <ul>
+      <li><a href="https://code.google.com/p/google-gson/">Google Gson</a></li>
+      <li><a href="http://commons.apache.org/proper/commons-lang/">Apache Common Lang</a></li>
+      <li><a href="https://code.google.com/p/snakeyaml/">SnakeYaml</a></li>
+      <li><a href="http://getbootstrap.com/">Bootstrap 3 Theme</a></li>
+    </ul>
+
+    <h3>Note</h3>
+    <ul>
+      <li>I am using IntelliJ to build the whole project. So the project will not by importable in Eclipse. If it does, I do not guarantee that it will run inside of Eclipse Tomcat sandbox.
+      <li><b>**Must**</b> be deployed as the <code>ROOT</code> in Tomcat.
+    </ul>
+  </div>
+
+  <hr />
+  <footer>
+    Chao Yang - 5682061 - SOEN 387 Fall 2013
+  </footer>
+</div>
+
+</body>
+</html>

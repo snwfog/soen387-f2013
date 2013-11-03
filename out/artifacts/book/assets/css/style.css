@@ -1,0 +1,17 @@
+.container
+{
+  margin-top: 20px;
+}
+
+table tr td:first-child
+{
+  width: 150px;
+  font-weight: bold;
+}
+
+table tr td:nth-child(3)
+{
+  width: 150px;
+}
+
+
